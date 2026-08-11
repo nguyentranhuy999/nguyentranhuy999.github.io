@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI engineering and research portfolio of Nguyen Tran Huy">
+  <meta name="theme-color" content="#101a35">
+  <title>Nguyen Tran Huy — AI Engineer & Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="Back to top">NTH<span>.</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+    </nav>
+    <button class="print-button" type="button" onclick="window.print()">Print / Save PDF</button>
+  </header>
+
+  <main class="page" id="top">
+    <aside class="profile-rail">
+      <!-- Replace this block with: <img class="portrait photo" src="assets/profile.jpg" alt="Nguyen Tran Huy"> -->
+      <div class="portrait" aria-label="Profile photo placeholder">
+        <span>NTH</span>
+        <small>YOUR PHOTO</small>
+      </div>
+
+      <section class="rail-section">
+        <p class="eyebrow light">Contact</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/YOUR_USERNAME">github.com/YOUR_USERNAME</a></li>
+          <li><span>Location</span>Hanoi / Thai Binh, Vietnam</li>
+          <li><span>Date of birth</span>DD / MM / YYYY</li>
+        </ul>
+      </section>
+
+      <section class="rail-section">
+        <p class="eyebrow light">Research interests</p>
+        <ul class="interest-list">
+          <li>Continual Learning</li>
+          <li>Explainable AI</li>
+          <li>Neural Architecture Design</li>
+          <li>Computational Neuroscience</li>
+        </ul>
+      </section>
+
+      <div class="rail-note">
+        <span>Currently exploring</span>
+        <strong>How neural systems can learn continuously with less computation.</strong>
+      </div>
+    </aside>
+
+    <article class="content">
+      <section class="intro">
+        <p class="eyebrow">AI engineering · Research</p>
+        <h1>Nguyễn Trần <span>Huy</span></h1>
+        <p class="role">Artificial Intelligence Student at VNU University of Engineering and Technology</p>
+        <p class="summary">I build and evaluate learning systems at the intersection of machine learning, reasoning, and neuroscience. My current focus is continual learning: helping models acquire new knowledge while preserving what they have already learned.</p>
+        <div class="quick-links">
+          <a class="primary-link" href="https://github.com/YOUR_USERNAME">View GitHub <span aria-hidden="true">↗</span></a>
+          <a href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-heading"><p class="section-number">01</p><h2>Education</h2></div>
+        <div class="education-grid">
+          <div class="timeline">
+            <article class="timeline-item current">
+              <div class="timeline-date">2023 — 2027</div>
+              <h3>VNU University of Engineering and Technology</h3>
+              <p>B.Sc. in Artificial Intelligence · Expected graduation 2027</p>
+              <div class="edu-meta">
+                <span>Current GPA <strong>3.XX / 4.00</strong></span>
+                <span>Graduation target <strong>3.XX / 4.00</strong></span>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-date">2020 — 2023</div>
+              <h3>Thai Binh High School for the Gifted</h3>
+              <p>Mathematics specialized class · K20–23</p>
+            </article>
+          </div>
+
+          <div class="gpa-card" aria-label="GPA progress by semester">
+            <div class="card-title">
+              <div><span>Academic trajectory</span><strong>GPA by semester</strong></div>
+              <span>/ 4.00</span>
+            </div>
+            <!-- Change each displayed GPA and the matching --value percentage. GPA / 4 * 100 = percentage. -->
+            <div class="chart">
+              <div class="bar-group"><span class="bar-value">3.XX</span><div class="bar-track"><i style="--value:58%"></i></div><span>S1</span></div>
+              <div class="bar-group"><span class="bar-value">3.XX</span><div class="bar-track"><i style="--value:66%"></i></div><span>S2</span></div>
+              <div class="bar-group"><span class="bar-value">3.XX</span><div class="bar-track"><i style="--value:72%"></i></div><span>S3</span></div>
+              <div class="bar-group"><span class="bar-value">3.XX</span><div class="bar-track"><i style="--value:79%"></i></div><span>S4</span></div>
+              <div class="bar-group"><span class="bar-value">3.XX</span><div class="bar-track"><i style="--value:86%"></i></div><span>Now</span></div>
+            </div>
+            <p class="chart-note">Replace the placeholder values with your official transcript data.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading"><p class="section-number">02</p><h2>Selected projects</h2></div>
+        <div class="project-list">
+          <article class="project featured">
+            <div class="project-topline">
+              <span>01 · LLM reasoning</span>
+              <a href="https://github.com/YOUR_USERNAME/GSM8K-SOLUTION-VERIFIER">Repository ↗</a>
+            </div>
+            <h3>GSM8K Solution Verifier</h3>
+            <p class="project-lead">A relation-based approach for generating, representing, and evaluating mathematical solutions with large language models.</p>
+            <ul>
+              <li>Extracts objects and relations from GSM8K problem statements using an LLM.</li>
+              <li>Transforms student solutions into comparable relational structures to locate reasoning errors.</li>
+              <li>Achieved approximately <strong>5% higher evaluation and error-detection accuracy</strong> in preliminary experiments.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>LLM</span><span>GSM8K</span><span>Evaluation</span></div>
+          </article>
+
+          <article class="project">
+            <div class="project-topline"><span>02 · Continual learning</span><span>In progress</span></div>
+            <h3>Sleep-Inspired Continual Learning</h3>
+            <p class="project-lead">A day–night learning cycle that locally acquires new tasks, audits parameter changes, and consolidates trusted knowledge through replay.</p>
+            <ul>
+              <li>Represents task knowledge as gated parameter-delta fragments with learned trust scores.</li>
+              <li>Evaluates catastrophic forgetting on class-incremental MNIST against fine-tuning, replay, and joint-training baselines.</li>
+            </ul>
+            <div class="tags"><span>PyTorch</span><span>Continual Learning</span><span>Research</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading"><p class="section-number">03</p><h2>Technical skills</h2></div>
+        <div class="skill-grid">
+          <div><span>Programming</span><p>Python · C++ · Java</p></div>
+          <div><span>Machine learning</span><p>PyTorch · TensorFlow · scikit-learn</p></div>
+          <div><span>Tools & infrastructure</span><p>Git · Docker · Linux · Kaggle</p></div>
+          <div><span>Research</span><p>Experimental design · Model evaluation · Technical writing</p></div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Open to AI engineering internships and research collaborations.</p>
+        <a href="mailto:your.email@example.com">Let's talk <span aria-hidden="true">↗</span></a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
